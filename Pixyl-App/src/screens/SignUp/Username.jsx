@@ -5,6 +5,7 @@ import { GlobalStyles, Theme } from "../../components/Layout/GlobalStyles";
 //COMPONENTS
 import InputMessage from "../../components/Input/InputMessage";
 import BigMessage from "../../components/Message/BigMessage";
+import Stepper from "../../components/Layout/Stepper";
 
 const Username = () => {
   const [username, setUserName] = React.useState();
@@ -28,6 +29,7 @@ const Username = () => {
           placeholder="Enter an username"
         />
       </View>
+      <Stepper index={1} nextScreen='Password' />
     </View>
   );
 };

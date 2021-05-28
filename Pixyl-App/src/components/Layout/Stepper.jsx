@@ -16,11 +16,10 @@ const Stepper = ({ index = 0, nextScreen }) => {
     false,
   ]);
 
-  const handleCircles = async (i) => {
+  const handleCircles = (i) => {
     let temCircles = circles;
     circles[i] = true;
-    await setCircles([...temCircles]);
-    console.log(circles);
+    setCircles([...temCircles]);
   };
 
   React.useEffect(() => {
@@ -57,7 +56,6 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     alignItems: "center",
     paddingHorizontal: 10,
-
     position: "absolute",
     height: 50,
     left: 0,

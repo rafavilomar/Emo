@@ -1,9 +1,10 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import { GlobalStyles } from "../components/Layout/GlobalStyles";
+import { GlobalStyles } from "../../components/Layout/GlobalStyles";
 
 //COMPONENTS
-import BigMessage from "../components/Message/BigMessage";
+import BigMessage from "../../components/Message/BigMessage";
+import Stepper from "../../components/Layout/Stepper";
 
 const BotIntroduce = () => {
   return (
@@ -18,6 +19,7 @@ const BotIntroduce = () => {
       <View style={styles.bot}>
         <View style={GlobalStyles.botNormal} />
       </View>
+      <Stepper index={0} nextScreen='Username' />
     </View>
   );
 };

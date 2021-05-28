@@ -4,6 +4,7 @@ import { GlobalStyles } from "../../components/Layout/GlobalStyles";
 
 //COMPONENTS
 import BigMessage from "../../components/Message/BigMessage";
+import Stepper from "../../components/Layout/Stepper";
 
 const Finish = () => {
   return (
@@ -18,6 +19,7 @@ const Finish = () => {
       <View style={styles.bot}>
         <View style={GlobalStyles.botNormal} />
       </View>
+      <Stepper index={3} nextScreen='ChatBot' />
     </View>
   );
 };

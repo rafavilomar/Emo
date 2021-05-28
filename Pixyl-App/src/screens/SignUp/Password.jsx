@@ -18,7 +18,9 @@ const Password = () => {
       <View style={styles.top}>
         <View style={GlobalStyles.botNormal}></View>
         <BigMessage
-          text={["We need a password to talk to each other. Shhh ... we shouldn't tell anyone"]}
+          text={[
+            "We need a password to talk to each other. Shhh ... we shouldn't tell anyone",
+          ]}
         />
       </View>
       <View style={styles.action}>
@@ -29,7 +31,7 @@ const Password = () => {
           placeholder="Enter a password"
         />
       </View>
-      <Stepper index={2} nextScreen='Finish' />
+      <Stepper index={2} nextScreen="Finish" />
     </View>
   );
 };
