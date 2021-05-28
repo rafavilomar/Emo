@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
     paddingVertical: 10,
     paddingHorizontal: 15,
-    borderRadius: 10,
+    borderRadius: 20,
     borderBottomRightRadius: 0,
     width: "fit-content",
   },
