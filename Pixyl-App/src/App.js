@@ -9,6 +9,7 @@ import Settings from "./screens/Settings";
 import AskAccount from "./screens/AskAccount";
 import Login from "./screens/Login";
 import BotIntroduce from "./screens/BotIntroduce";
+import Finish from "./screens/SignUp/Finish";
 
 export default function App() {
   const Stack = createStackNavigator();
@@ -16,7 +17,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator headerMode="none">
-        {/* <Stack.Screen name="BotIntroduce" component={BotIntroduce} /> */}
+        <Stack.Screen name="Finish" component={Finish} />
         
         <Stack.Screen name="ChatBot" component={ChatBot} />
         <Stack.Screen name="VoiceBot" component={VoiceBot} />
