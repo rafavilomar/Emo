@@ -31,10 +31,9 @@ const Header = ({
                     ? Theme.background
                     : Theme.backgroundSecondary
                 }
-                onPress={() => backScreen && navigation.navigate(backScreen)}
               />
             }
-            onPress={() => null}
+            onPress={() => backScreen && navigation.navigate(backScreen)}
           />
         )}
       </View>
@@ -54,7 +53,7 @@ const Header = ({
                 }
               />
             }
-            onPress={() => null}
+            onPress={() => navigation.navigate("Settings")}
           />
         )}
       </View>

@@ -1,32 +1,20 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 
 //SCREENS
-import ChatBot from './screens/ChatBot.jsx'
+import ChatBot from "./screens/ChatBot";
+import VoiceBot from "./screens/VoiceBot";
 
 export default function App() {
   const Stack = createStackNavigator();
+
   return (
     <NavigationContainer>
-        <Stack.Navigator headerMode="none">
-          <Stack.Screen name="ChatBot" component={ChatBot} />
-        </Stack.Navigator>
-      </NavigationContainer>
-  //   <View style={styles.container}>
-  //     <Text>Open up App.js to start working on your app!</Text>
-  //     <StatusBar style="auto" />
-  //   </View>
-  // 
+      <Stack.Navigator headerMode="none">
+        <Stack.Screen name="ChatBot" component={ChatBot} />
+        <Stack.Screen name="VoiceBot" component={VoiceBot} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
