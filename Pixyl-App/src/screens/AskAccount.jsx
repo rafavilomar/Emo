@@ -1,5 +1,5 @@
 import React from "react";
-import { Theme } from "../components/Layout/GlobalStyles";
+import { GlobalStyles, Theme } from "../components/Layout/GlobalStyles";
 import { StyleSheet, View } from "react-native";
 
 //COMPONENTS
@@ -10,7 +10,7 @@ const AskAccount = () => {
   return (
     <View style={styles.root}>
       <View style={styles.top}>
-        <View style={styles.bot}></View>
+        <View style={GlobalStyles.botNormal}></View>
         <BigMessage text="Mmmm... Have we met before?" />
       </View>
       <View style={styles.actions}>
@@ -36,12 +36,6 @@ const styles = StyleSheet.create({
     left: 0,
     backgroundColor: Theme.background,
     justifyContent: "space-around",
-  },
-  bot: {
-    height: 150,
-    width: 150,
-    backgroundColor: Theme.bot,
-    borderRadius: 1000,
   },
   top: {
     display: "flex",

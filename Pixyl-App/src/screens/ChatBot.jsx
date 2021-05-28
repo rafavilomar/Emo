@@ -1,5 +1,5 @@
 import React from "react";
-import { Theme } from "../components/Layout/GlobalStyles";
+import { GlobalStyles, Theme } from "../components/Layout/GlobalStyles";
 import { ScrollView, StyleSheet, TouchableOpacity, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
@@ -33,7 +33,7 @@ const ChatBot = () => {
       <Header settings />
       <StatusBar style="dark" />
       <TouchableOpacity
-        style={styles.bot}
+        style={GlobalStyles.botSmall}
         onPress={() => navigation.navigate("VoiceBot")}
       ></TouchableOpacity>
       <ScrollView style={styles.content}>
@@ -83,24 +83,5 @@ const styles = StyleSheet.create({
     alignItems: "flex-end",
     paddingHorizontal: 20,
     paddingVertical: 10,
-  },
-  bot: {
-    position: "absolute",
-    left: 20,
-    top: 25,
-    backgroundColor: Theme.bot,
-    width: 80,
-    height: 80,
-    borderRadius: 100,
-    zIndex: 1000,
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 3,
-    },
-    shadowOpacity: 0.29,
-    shadowRadius: 4.65,
-
-    elevation: 7,
   },
 });

@@ -15,12 +15,13 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator headerMode="none">
-        <Stack.Screen name="Login" component={Login} />
+        {/* <Stack.Screen name="Login" component={Login} /> */}
         
         <Stack.Screen name="ChatBot" component={ChatBot} />
         <Stack.Screen name="VoiceBot" component={VoiceBot} />
         <Stack.Screen name="Settings" component={Settings} />
         <Stack.Screen name="AskAccount" component={AskAccount} />
+        <Stack.Screen name="Login" component={Login} />
 
       </Stack.Navigator>
     </NavigationContainer>
