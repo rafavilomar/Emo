@@ -11,7 +11,7 @@ const AskAccount = () => {
     <View style={styles.root}>
       <View style={styles.top}>
         <View style={GlobalStyles.botNormal}></View>
-        <BigMessage text="Mmmm... Have we met before?" />
+        <BigMessage text={["Mmmm... Have we met before?"]} />
       </View>
       <View style={styles.actions}>
         <MessageButton text="Yes! I’m..." onPress={() => null} />
