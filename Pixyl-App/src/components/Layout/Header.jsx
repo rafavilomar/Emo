@@ -77,6 +77,10 @@ const styles = StyleSheet.create({
   },
   text: {
     flexGrow: 1,
+    fontWeight: 600,
+    fontSize: 22,
+    color: Theme.background,
+    marginHorizontal: 10
   },
   option: {
     width: 40,
