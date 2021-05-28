@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
   section: {
     display: "flex",
     flexDirection: "column",
-    marginTop: 40
+    marginTop: 40,
   },
   titleSection: {
     paddingHorizontal: 20,

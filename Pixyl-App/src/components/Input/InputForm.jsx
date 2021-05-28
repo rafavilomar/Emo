@@ -1,6 +1,6 @@
 import React from "react";
-import { StyleSheet, Text, TextInput, View } from "react-native";
 import { Theme } from "../Layout/GlobalStyles";
+import { StyleSheet, Text, TextInput, View } from "react-native";
 
 const InputForm = ({ title, value, multiline = false }) => {
   return (
