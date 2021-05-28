@@ -1,5 +1,5 @@
 import React from "react";
-import { GlobalStyles } from "../components/Layout/GlobalStyles";
+import { GlobalStyles, Theme } from "../components/Layout/GlobalStyles";
 import { StyleSheet, Text, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
@@ -49,7 +49,7 @@ export default Login;
 
 const styles = StyleSheet.create({
   root: {
-    backgroundColor: "#101429",
+    backgroundColor: Theme.background,
     position: "absolute",
     top: 0,
     bottom: 0,
