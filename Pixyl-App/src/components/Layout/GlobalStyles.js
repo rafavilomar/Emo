@@ -14,4 +14,9 @@ export const GlobalStyles = StyleSheet.create({
     fontSize: 20,
     color: Theme.background,
   },
+  titleDark: {
+    fontWeight: "bold",
+    fontSize: 20,
+    color: Theme.backgroundSecondary,
+  }
 });

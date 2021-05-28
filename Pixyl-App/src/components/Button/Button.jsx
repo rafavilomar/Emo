@@ -4,7 +4,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 const Button = ({ text, variant = "primary", onPress }) => {
   return (
-    <View style={{ borderRadius: 10, overflow: "hidden" }}>
+    <View style={{ borderRadius: 10, overflow: "hidden", maxWidth: 185 }}>
       <TouchableOpacity
         style={[
           styles.btn,
@@ -36,6 +36,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     paddingHorizontal: 20,
     fontWeight: "600",
+    width: 185,
   },
   primary: {
     backgroundColor: Theme.primary,

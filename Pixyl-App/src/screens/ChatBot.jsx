@@ -20,7 +20,7 @@ const ChatBot = () => {
   const [msgValue, setMsgValue] = React.useState();
 
   // FUNCTIONS
-  const handleMsgValue = async (value) => {
+  const handleMsgValue = (value) => {
     setMsgValue(value);
   };
   const sendMessage = () => {
