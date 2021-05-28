@@ -1,4 +1,5 @@
 import React from "react";
+import { Theme } from "../Layout/GlobalStyles";
 import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 const Button = ({ text, variant = "primary", onPress }) => {
@@ -37,17 +38,17 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
   primary: {
-    backgroundColor: "#3A908D",
+    backgroundColor: Theme.primary,
   },
   secondary: {
-    backgroundColor: "#E1F5F3",
+    backgroundColor: Theme.secondary,
   },
   textPrimary: {
     fontWeight: "600",
-    color: "#f4f4f4",
+    color: Theme.backgroundSecondary,
   },
   textSecondary: {
     fontWeight: "600",
-    color: "#101429",
+    color: Theme.background,
   },
 });

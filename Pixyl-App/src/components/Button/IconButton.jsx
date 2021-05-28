@@ -1,4 +1,5 @@
 import React from "react";
+import { Theme } from "../Layout/GlobalStyles";
 import { StyleSheet, View, TouchableOpacity } from "react-native";
 
 const IconButton = ({ icon, onPress, variant = "primary" }) => {
@@ -35,14 +36,14 @@ const styles = StyleSheet.create({
     minWidth: 44,
   },
   primary: {
-    backgroundColor: "#3A908D",
+    backgroundColor: Theme.primary,
   },
   mute: { width: 70, height: 70, backgroundColor: "#D60000" },
   header: {
     backgroundColor: "#ffffff",
   },
   dark: {
-    backgroundColor: "#101429",
+    backgroundColor: Theme.background,
   },
   active: {},
   disabled: {},

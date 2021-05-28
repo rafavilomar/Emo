@@ -1,4 +1,6 @@
 import React from "react";
+import { Theme } from "../Layout/GlobalStyles";
+
 import { StyleSheet, Text, View } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
@@ -9,13 +11,21 @@ const MessageButton = ({ text, onPress, variant = "primary" }) => {
         <View
           style={[
             styles.message,
-            { backgroundColor: variant === "primary" ? "#3A908D" : "#E1F5F3" },
+            {
+              backgroundColor:
+                variant === "primary" ? Theme.primary : Theme.secondary,
+            },
           ]}
         >
           <Text
             style={[
               styles.text,
-              { color: variant === "primary" ? "#f4f4f4" : "#101429" },
+              {
+                color:
+                  variant === "primary"
+                    ? Theme.backgroundSecondary
+                    : Theme.background,
+              },
             ]}
           >
             {text}
