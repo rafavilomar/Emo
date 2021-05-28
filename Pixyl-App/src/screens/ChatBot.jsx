@@ -11,6 +11,7 @@ import { conversation, greeting } from "../utils/testBot";
 import IconButton from "../components/Button/IconButton";
 import Input from "../components/Input/Input";
 import Message from "../components/Message/Message";
+import Header from "../components/Layout/Header";
 
 const ChatBot = () => {
   const navigation = useNavigation();
@@ -29,6 +30,7 @@ const ChatBot = () => {
 
   return (
     <View style={styles.root}>
+      <Header settings />
       <StatusBar style="dark" />
       <TouchableOpacity
         style={styles.bot}

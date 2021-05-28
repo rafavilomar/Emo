@@ -2,13 +2,7 @@ import React from "react";
 import { Theme } from "../Layout/GlobalStyles";
 import { StyleSheet, TextInput } from "react-native";
 
-const Input = ({
-  value,
-  handleValue = () => null,
-  placeholder,
-  type,
-  multiline = false,
-}) => {
+const Input = ({ value, handleValue, placeholder, multiline = false }) => {
   return (
     <TextInput
       multiline={multiline}
