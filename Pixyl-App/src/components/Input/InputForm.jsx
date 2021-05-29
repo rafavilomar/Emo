@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
   },
   input: {
     paddingVertical: 5,
-    fontWeight: 600,
+    fontWeight: '600',
     fontSize: 16,
     borderBottomWidth: 2,
     borderBottomColor: Theme.bot,

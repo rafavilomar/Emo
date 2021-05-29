@@ -33,9 +33,9 @@ const Input = ({
         <IconButton
           icon={
             showPassword ? (
-              <Ionicons name="eye-off" size={16} color={Theme.background} />
+              <Ionicons name="eye-off" size={22} color={Theme.background} />
             ) : (
-              <Ionicons name="eye" size={16} color={Theme.background} />
+              <Ionicons name="eye" size={22} color={Theme.background} />
             )
           }
           onPress={handleShowPassword}
@@ -53,6 +53,7 @@ const styles = StyleSheet.create({
     width: "100%",
     overflow: "hidden",
     display: "flex",
+    alignItems: 'center',
     flexDirection: "row",
     backgroundColor: Theme.backgroundSecondary,
   },

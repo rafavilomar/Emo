@@ -27,7 +27,7 @@ const styles = StyleSheet.create({
     maxWidth: "60%",
   },
   text: {
-    fontWeight: 600,
+    fontWeight: '600',
     fontSize: 16,
     color: Theme.background,
   },

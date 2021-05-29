@@ -41,13 +41,15 @@ const ChatBot = () => {
           <Message text={message.text} from={message.from} key={message.text} />
         ))}
       </ScrollView>
-      <View style={styles.input}>
+      <View style={styles.action}>
+        <View style={styles.input} >
         <Input
           value={msgValue}
           handleValue={handleMsgValue}
           placeholder="Type a message"
           multiline
         />
+        </View>
         <IconButton
           icon={
             <Ionicons name="send" size={20} color={Theme.backgroundSecondary} />
@@ -74,7 +76,7 @@ const styles = StyleSheet.create({
     flex: 1,
     overflow: "scroll",
   },
-  input: {
+  action: {
     borderTopColor: Theme.backgroundSecondary,
     borderTopWidth: 2,
     backgroundColor: "white",
@@ -84,4 +86,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 10,
   },
+  input: {
+    flex: 1,
+    marginRight: 15
+  }
 });

@@ -10,7 +10,7 @@ import AskAccount from "./screens/AskAccount";
 import Login from "./screens/Login";
 import BotIntroduce from "./screens/SignUp/BotIntroduce";
 import Finish from "./screens/SignUp/Finish";
-import Username from "./screens/SignUp/UserName";
+import Username from "./screens/SignUp/Username";
 import Password from "./screens/SignUp/Password";
 
 export default function App() {
@@ -19,13 +19,13 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator headerMode="none">
-        <Stack.Screen name="Login" component={Login} />
+        {/* <Stack.Screen name="Login" component={Login} /> */}
         
         <Stack.Screen name="ChatBot" component={ChatBot} />
         <Stack.Screen name="VoiceBot" component={VoiceBot} />
         <Stack.Screen name="Settings" component={Settings} />
         <Stack.Screen name="AskAccount" component={AskAccount} />
-        {/* <Stack.Screen name="Login" component={Login} /> */}
+        <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="BotIntroduce" component={BotIntroduce} />
         <Stack.Screen name="Username" component={Username} />
         <Stack.Screen name="Password" component={Password} />
