@@ -32,15 +32,15 @@ const styles = StyleSheet.create({
     alignItems: "center",
     padding: 10,
     borderWidth: 0,
-    minHeight: 44,
-    minWidth: 44,
+    // minHeight: 44,
+    // minWidth: 44,
   },
   primary: {
     backgroundColor: Theme.primary,
   },
   mute: { width: 70, height: 70, backgroundColor: "#D60000" },
   header: {
-    backgroundColor: "#ffffff",
+    //backgroundColor: "#ffffff",
   },
   dark: {
     backgroundColor: Theme.background,

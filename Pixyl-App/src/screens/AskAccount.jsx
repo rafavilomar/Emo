@@ -1,12 +1,14 @@
 import React from "react";
 import { GlobalStyles, Theme } from "../components/Layout/GlobalStyles";
 import { StyleSheet, View } from "react-native";
+import { useNavigation } from "@react-navigation/core";
 
 //COMPONENTS
 import MessageButton from "../components/Button/MessageButton";
 import BigMessage from "../components/Message/BigMessage";
 
 const AskAccount = () => {
+  const navigation = useNavigation();
   return (
     <View style={styles.root}>
       <View style={styles.top}>
@@ -14,11 +16,14 @@ const AskAccount = () => {
         <BigMessage text={["Mmmm... Have we met before?"]} />
       </View>
       <View style={styles.actions}>
-        <MessageButton text="Yes! I’m..." onPress={() => null} />
+        <MessageButton
+          text="Yes! I’m..."
+          onPress={() => navigation.navigate("Login")}
+        />
         <MessageButton
           variant="secondary"
           text="No. Who are you?"
-          onPress={() => null}
+          onPress={() => navigation.navigate("BotIntroduce")}
         />
       </View>
     </View>
@@ -41,7 +46,7 @@ const styles = StyleSheet.create({
     display: "flex",
     alignItems: "center",
     height: 250,
-    justifyContent: 'space-between'
+    justifyContent: "space-between",
   },
   actions: {
     display: "flex",

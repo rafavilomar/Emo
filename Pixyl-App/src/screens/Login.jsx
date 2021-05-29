@@ -32,14 +32,19 @@ const Login = () => {
           handleValue={handleUserName}
         />
         <Input
+          variant="password"
           placeholder="Password"
           value={password}
           handleValue={handlePassword}
         />
       </View>
       <View style={styles.action}>
-        <Button text="Login" onPress={() => null} />
-        <Button text="Back" variant="secondary" onPress={() => null} />
+        <Button text="Login" onPress={() => navigation.navigate("ChatBot")} />
+        <Button
+          text="Back"
+          variant="secondary"
+          onPress={() => navigation.navigate("AskAccount")}
+        />
       </View>
     </View>
   );
