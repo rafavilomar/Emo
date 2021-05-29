@@ -1,11 +1,13 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { StyleSheet, View, Image } from "react-native";
 import { GlobalStyles, Theme } from "../../components/Layout/GlobalStyles";
 
 //COMPONENTS
 import InputMessage from "../../components/Input/InputMessage";
 import BigMessage from "../../components/Message/BigMessage";
 import Stepper from "../../components/Layout/Stepper";
+
+import img from "../../assets/character/pixyl.png";
 
 const Username = () => {
   const [username, setUserName] = React.useState();
@@ -16,7 +18,8 @@ const Username = () => {
   return (
     <View style={styles.root}>
       <View style={styles.top}>
-        <View style={GlobalStyles.botNormal}></View>
+        {/* <View style={GlobalStyles.botNormal}></View> */}
+        <Image source={img} style={GlobalStyles.botNormal} />
         <BigMessage
           text={["I’ld like to meet you, would you mind telling me your name?"]}
         />

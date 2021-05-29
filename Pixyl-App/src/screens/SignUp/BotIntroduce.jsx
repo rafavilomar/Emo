@@ -1,10 +1,12 @@
 import React from "react";
-import { StyleSheet, View } from "react-native";
+import { Image, StyleSheet, View } from "react-native";
 import { GlobalStyles } from "../../components/Layout/GlobalStyles";
 
 //COMPONENTS
 import BigMessage from "../../components/Message/BigMessage";
 import Stepper from "../../components/Layout/Stepper";
+
+import img from "../../assets/character/pixyl.png";
 
 const BotIntroduce = () => {
   return (
@@ -17,7 +19,8 @@ const BotIntroduce = () => {
         ]}
       />
       <View style={styles.bot}>
-        <View style={GlobalStyles.botNormal} />
+        {/* <View style={GlobalStyles.botNormal} /> */}
+        <Image source={img} style={GlobalStyles.botNormal} />
       </View>
       <Stepper index={0} nextScreen='Username' />
     </View>

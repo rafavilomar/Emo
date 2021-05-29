@@ -1,18 +1,21 @@
 import React from "react";
 import { GlobalStyles, Theme } from "../components/Layout/GlobalStyles";
-import { StyleSheet, View } from "react-native";
+import { Image, StyleSheet, View } from "react-native";
 import { useNavigation } from "@react-navigation/core";
 
 //COMPONENTS
 import MessageButton from "../components/Button/MessageButton";
 import BigMessage from "../components/Message/BigMessage";
 
+import img from "../assets/character/pixyl.png";
+
 const AskAccount = () => {
   const navigation = useNavigation();
+  
   return (
     <View style={styles.root}>
       <View style={styles.top}>
-        <View style={GlobalStyles.botNormal}></View>
+        <Image source={img} style={GlobalStyles.botNormal} />
         <BigMessage text={["Mmmm... Have we met before?"]} />
       </View>
       <View style={styles.actions}>

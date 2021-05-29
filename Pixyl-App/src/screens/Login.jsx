@@ -1,11 +1,13 @@
 import React from "react";
 import { GlobalStyles, Theme } from "../components/Layout/GlobalStyles";
-import { StyleSheet, Text, View } from "react-native";
+import { Image, StyleSheet, Text, View } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 //COMPONENTS
 import Button from "../components/Button/Button";
 import Input from "../components/Input/Input";
+
+import img from "../assets/character/pixyl.png";
 
 const Login = () => {
   const navigation = useNavigation();
@@ -24,6 +26,15 @@ const Login = () => {
 
   return (
     <View style={styles.root}>
+      <View style={GlobalStyles.botSmall}>
+        <Image
+          source={img}
+          style={{
+            width: "100%",
+            height: "100%",
+          }}
+        />
+      </View>
       <View style={styles.form}>
         <Text style={GlobalStyles.titleDark}>Hi! I'm...</Text>
         <Input

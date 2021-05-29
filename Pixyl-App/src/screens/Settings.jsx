@@ -21,11 +21,12 @@ const Settings = () => {
         <View style={styles.titleSection}>
           <Text style={GlobalStyles.title}>About Pixyl</Text>
         </View>
-        <InputForm title="Race" value="Race name" />
+        <InputForm title="Race" value="Race name" handleValue={() => null} />
         <InputForm
           title="Planet"
           value="Planet name and description. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           multiline
+          handleValue={() => null}
         />
       </View>
     </ScrollView>

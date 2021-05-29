@@ -1,6 +1,13 @@
 import React from "react";
 import { GlobalStyles, Theme } from "../components/Layout/GlobalStyles";
-import { ScrollView, StyleSheet, TouchableOpacity, View } from "react-native";
+import {
+  Image,
+  ImageBackground,
+  ScrollView,
+  StyleSheet,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { useNavigation } from "@react-navigation/native";
 
@@ -12,6 +19,8 @@ import IconButton from "../components/Button/IconButton";
 import Input from "../components/Input/Input";
 import Message from "../components/Message/Message";
 import Header from "../components/Layout/Header";
+
+import img from "../assets/character/pixyl.png";
 
 const ChatBot = () => {
   const navigation = useNavigation();
@@ -35,20 +44,40 @@ const ChatBot = () => {
       <TouchableOpacity
         style={GlobalStyles.botSmall}
         onPress={() => navigation.navigate("VoiceBot")}
-      ></TouchableOpacity>
+      >
+        <View >
+        <Image
+          source={img}
+          style={{
+            width: '100%',
+            height: '100%',
+            shadowColor: "#000",
+            shadowOffset: {
+              width: 0,
+              height: 11,
+            },
+            shadowOpacity: 0.57,
+            shadowRadius: 15.19,
+
+            elevation: 23,
+          }}
+        />
+        </View>
+      </TouchableOpacity>
+      {/* <ImageBackground source={img} style={GlobalStyles.botSmall} /> */}
       <ScrollView style={styles.content}>
         {conversation.map((message) => (
           <Message text={message.text} from={message.from} key={message.text} />
         ))}
       </ScrollView>
       <View style={styles.action}>
-        <View style={styles.input} >
-        <Input
-          value={msgValue}
-          handleValue={handleMsgValue}
-          placeholder="Type a message"
-          multiline
-        />
+        <View style={styles.input}>
+          <Input
+            value={msgValue}
+            handleValue={handleMsgValue}
+            placeholder="Type a message"
+            multiline
+          />
         </View>
         <IconButton
           icon={
@@ -88,6 +117,6 @@ const styles = StyleSheet.create({
   },
   input: {
     flex: 1,
-    marginRight: 15
-  }
+    marginRight: 15,
+  },
 });

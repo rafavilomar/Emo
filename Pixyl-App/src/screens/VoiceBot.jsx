@@ -1,18 +1,21 @@
 import React from "react";
 import { Theme } from "../components/Layout/GlobalStyles";
-import { StyleSheet, View } from "react-native";
+import { Image, StyleSheet, View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 //COMPONENTS
 import Header from "../components/Layout/Header";
 import IconButton from "../components/Button/IconButton";
 
+import img from "../assets/character/pixyl.png";
+
 const VoiceBot = () => {
   return (
     <View style={styles.root}>
       <Header back variant="dark" backScreen="ChatBot" />
       <View style={styles.content}>
-        <View style={styles.bot}></View>
+        {/* <View style={styles.bot}></View> */}
+        <Image source={img} style={styles.bot} />
         <IconButton
           icon={
             <Ionicons name="mic" size={40} color={Theme.backgroundSecondary} />
@@ -45,8 +48,8 @@ const styles = StyleSheet.create({
   bot: {
     height: 200,
     width: 200,
-    backgroundColor: Theme.bot,
-    borderRadius: 1000,
+    //backgroundColor: Theme.bot,
+    //borderRadius: 1000,
     marginBottom: 95,
   },
 });
