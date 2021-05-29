@@ -1,32 +1,70 @@
 import React from "react";
 import { Theme } from "../Layout/GlobalStyles";
-import { StyleSheet, TextInput } from "react-native";
+import { StyleSheet, TextInput, View } from "react-native";
+import { Ionicons } from "@expo/vector-icons";
 
-const Input = ({ value, handleValue, placeholder, multiline = false }) => {
+//COMPONENTS
+import IconButton from "../Button/IconButton";
+
+const Input = ({
+  value,
+  handleValue,
+  placeholder,
+  multiline = false,
+  variant = "normal",
+}) => {
+  const [showPassword, setShowPassword] = React.useState(
+    variant === "password" ? true : false
+  );
+  const handleShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
   return (
-    <TextInput
-      multiline={multiline}
-      style={styles.root}
-      placeholder={placeholder}
-      value={value}
-      onChangeText={(e) => handleValue(e)}
-    />
+    <View style={styles.root}>
+      <TextInput
+        multiline={multiline}
+        style={styles.input}
+        placeholder={placeholder}
+        value={value}
+        onChangeText={(e) => handleValue(e)}
+        secureTextEntry={showPassword}
+      />
+      {variant === "password" && (
+        <IconButton
+          icon={
+            showPassword ? (
+              <Ionicons name="eye-off" size={16} color={Theme.background} />
+            ) : (
+              <Ionicons name="eye" size={16} color={Theme.background} />
+            )
+          }
+          onPress={handleShowPassword}
+          variant="light"
+        />
+      )}
+    </View>
   );
 };
 export default Input;
 
 const styles = StyleSheet.create({
   root: {
+    borderRadius: 20,
+    width: "100%",
+    overflow: "hidden",
+    display: "flex",
+    flexDirection: "row",
+    backgroundColor: Theme.backgroundSecondary,
+  },
+  input: {
     alignItems: "center",
     paddingVertical: 10,
     paddingHorizontal: 20,
     backgroundColor: Theme.backgroundSecondary,
-    borderRadius: 20,
     height: "auto",
     maxHeight: 80,
     borderWidth: 0,
     color: "#2E4E65",
-    marginRight: 15,
-    width: "100%",
+    flex: 1,
   },
 });
