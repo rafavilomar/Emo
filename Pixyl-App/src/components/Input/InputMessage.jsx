@@ -30,6 +30,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     fontSize: 16,
     color: Theme.background,
+    fontFamily: 'sans-serif'
   },
   input: {
     paddingVertical: 5,
@@ -37,5 +38,6 @@ const styles = StyleSheet.create({
     borderBottomWidth: 2,
     borderBottomColor: Theme.bot,
     color: "#2E4E65",
+    fontFamily: 'sans-serif'
   },
 });

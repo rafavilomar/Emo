@@ -67,5 +67,6 @@ const styles = StyleSheet.create({
     borderWidth: 0,
     color: "#2E4E65",
     flex: 1,
+    fontFamily: 'sans-serif'
   },
 });

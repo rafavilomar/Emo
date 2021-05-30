@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: Theme.background,
     opacity: 0.5,
+    fontFamily: 'sans-serif'
   },
   input: {
     paddingVertical: 5,
@@ -29,5 +30,6 @@ const styles = StyleSheet.create({
     borderBottomWidth: 2,
     borderBottomColor: Theme.bot,
     color: "#2E4E65",
+    fontFamily: 'sans-serif'
   },
 });

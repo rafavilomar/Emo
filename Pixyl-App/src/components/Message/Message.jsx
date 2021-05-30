@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 14,
+    fontFamily: 'sans-serif'
   },
   rowUser: {
     display: "flex",
