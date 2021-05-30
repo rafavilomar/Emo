@@ -14,12 +14,11 @@ const BotIntroduce = () => {
       <BigMessage
         direction="buttom"
         text={[
-          "Hey! I’m Emo/Kira... Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit.",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit.",
+          "Hi! I am Pixyl. I am very happy that we can meet.",
+          "Maybe this is the beginning of a great story.",
         ]}
       />
       <View style={styles.bot}>
-        {/* <View style={GlobalStyles.botNormal} /> */}
         <Image source={img} style={GlobalStyles.botNormal} />
       </View>
       <Stepper index={0} nextScreen='Username' />

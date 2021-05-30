@@ -2,7 +2,7 @@ import React from "react";
 import { Theme } from "../Layout/GlobalStyles";
 import { StyleSheet, Text, View } from "react-native";
 
-const BigMessage = ({ text=[], direction = "top" }) => {
+const BigMessage = ({ text = [], direction = "top" }) => {
   return (
     <View
       style={[
@@ -12,7 +12,11 @@ const BigMessage = ({ text=[], direction = "top" }) => {
           : { borderBottomLeftRadius: 0 },
       ]}
     >
-      {text.map((e) => <Text style={styles.text}>{e}</Text> )}
+      {text.map((e) => (
+        <Text style={styles.text}>
+          {e}
+        </Text>
+      ))}
     </View>
   );
 };
@@ -31,7 +35,8 @@ const styles = StyleSheet.create({
   text: {
     color: Theme.backgroundSecondary,
     fontWeight: "600",
-    fontSize: 16,
-    marginVertical: 10
+    fontSize: 18,
+    marginVertical: 10,
+    fontFamily: 'sans-serif'
   },
 });

@@ -51,15 +51,6 @@ const ChatBot = () => {
           style={{
             width: '100%',
             height: '100%',
-            shadowColor: "#000",
-            shadowOffset: {
-              width: 0,
-              height: 11,
-            },
-            shadowOpacity: 0.57,
-            shadowRadius: 15.19,
-
-            elevation: 23,
           }}
         />
         </View>

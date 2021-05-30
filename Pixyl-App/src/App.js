@@ -1,7 +1,6 @@
 import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
-
 //SCREENS
 import ChatBot from "./screens/ChatBot";
 import VoiceBot from "./screens/VoiceBot";
@@ -19,7 +18,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator headerMode="none">
-        {/* <Stack.Screen name="AskAccount" component={AskAccount} /> */}
+        {/* <Stack.Screen name="BotIntroduce" component={BotIntroduce} /> */}
         
         <Stack.Screen name="ChatBot" component={ChatBot} />
         <Stack.Screen name="VoiceBot" component={VoiceBot} />

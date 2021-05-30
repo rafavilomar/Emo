@@ -13,11 +13,13 @@ export const GlobalStyles = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 20,
     color: Theme.background,
+    fontFamily: 'sans-serif'
   },
   titleDark: {
     fontWeight: "bold",
     fontSize: 20,
     color: Theme.backgroundSecondary,
+    fontFamily: 'sans-serif'
   },
   botSmall: {
     position: "absolute",
@@ -32,7 +34,5 @@ export const GlobalStyles = StyleSheet.create({
   botNormal: {
     height: 150,
     width: 150,
-    //backgroundColor: Theme.bot,
-    //borderRadius: 1000,
   },
 });

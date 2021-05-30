@@ -14,8 +14,8 @@ const Finish = () => {
       <BigMessage
         direction="buttom"
         text={[
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit.",
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit.",
+          "Cool! Now we can start our story together.",
+          "What are you waiting for? Let's talk!",
         ]}
       />
       <View style={styles.bot}>
